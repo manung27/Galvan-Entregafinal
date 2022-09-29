@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class=""mb-5>Listado de usuarios</h1>
+    {% for p in usuarios %}
+        <h2> {{ p.usuario }} </h2>
+        <h2> {{ p.email }} </h2>
+        <h2> {{ p.password }} </h2>
+    {% endfor %}
+</body>
+</html>
